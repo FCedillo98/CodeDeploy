@@ -9,7 +9,7 @@ hooks:
       timeout: 300
       runas: root
   BeforeInstall:
-    - location: codedeploy-scripts/before-inastall.sh
+    - location: codedeploy-scripts/beforeinstall.sh
       timeout: 300
       runas: root
   ApplicationStart:
