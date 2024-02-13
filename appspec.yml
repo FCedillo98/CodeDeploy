@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: build/libs/holamundo-0.0.1-plain-.war
+  - source: build/libs/holamundo-0.0.1-plain.war
     destination: /opt/tomcat/webapps/
 hooks:
   ApplicationStop:
