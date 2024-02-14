@@ -2,7 +2,7 @@ name: Java CD with CodeDeploy
 
 on:
   workflow_run:
-    workflows: [gradle]
+    workflows: [Java CI with Gradle]
     types: 
       - completed
 
