@@ -50,7 +50,7 @@ jobs:
     # - name: Build with Gradle 8.5
     #   run: gradle build
   testing:
-    runs-on: ubunutu-20.04
+    runs-on: ubuntu-20.04
     steps:
       - name: Clonar codigo
         uses: actions/checkout@v4
