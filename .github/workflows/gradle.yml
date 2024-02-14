@@ -15,7 +15,8 @@ on:
   workflow_dispatch:
   workflow_run:
     workflows: [build]
-    types: [completed]
+    types: 
+      - completed
 
 jobs:
   build:
