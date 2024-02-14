@@ -68,6 +68,7 @@ jobs:
       uses: gradle/actions/setup-gradle@v3 # v3.0.0
     - name: Hacer a gradlew ejecutable
       run: chmod +x gradlew
+
   
     # Generates and submits a dependency graph, enabling Dependabot Alerts for all project dependencies.
     # See: https://github.com/gradle/actions/blob/main/dependency-submission/README.md
