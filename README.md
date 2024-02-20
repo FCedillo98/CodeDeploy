@@ -19,9 +19,9 @@
 ---
 ## Workflows
 
-Dentro de la carpeta .github/workflows se encuentran dos ficheros YAML, **gradle.yml** y **aws.yml**.<br/>
+Dentro de la carpeta .github/workflows se encuentran dos ficheros YAML, **test.yml** y **deploy.yml**.<br/>
 En estos archivo se define el momento de ejecución de cada workflow y los trabajos que deben realizar, paso a paso.
 <br/>
 
-- **gradle.yml** compila y testea la aplicación. Se lanza al realizar un commit a la rama main.<br/>
-- **aws.yml** crea una implementación de nuestra aplicación en CodeDeploy en caso de que el workflow anterior se haya ejecutado correctamente.
+- **test.yml** compila y testea la aplicación. Se lanza al realizar un commit a la rama main.<br/>
+- **deploy.yml** crea una implementación de nuestra aplicación en CodeDeploy en caso de que el workflow anterior se haya ejecutado correctamente.
