@@ -13,9 +13,9 @@ jobs:
       - name: Clonar repositorio
         uses: actions/checkout@v4
       - name: Instala AWS CLI
-        run: apt-get update -y &&
-             apt-get upgrade -y &&
-             apt-get install awscli -y
+        run: sudo apt-get update -y &&
+             sudo apt-get upgrade -y &&
+             sudo apt-get install awscli -y
       - name: Configurar credenciales de AWS CLI
         uses: aws-actions/configure-aws-credentials@v4
         with:
