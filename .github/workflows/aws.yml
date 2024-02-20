@@ -24,7 +24,7 @@ jobs:
           aws-session-token: "FwoGZXIvYXdzEFsaDE1v0lepv9uY6bfEVyLJAUZdBKm8g9jUaULt9v1rT2EGoXpNUwqaTDlFr3kAjbwSPwFLp+eqpoeaOmyVzRpuGkjaBhK5Q6HkIeUmj4GunfHhI4WbAOdRCY/zMPp1ueJLXz+uipJsyOhT6lphMKJ9NtbWIoMR2zOYTiDIBM9qrt/MSoXusgiVbL9cl79wS6C7x5T9z0MIj/CTNmbfMGWj40e6ThjDXiVLzMRE/u5o6bnR+Gn+wRnJw+jR76vwXfXBLUqyqBHkBN+lZe+MgsE66YdOzCibipTMcCi4z9OuBjItz8/ifTkdj4LFfAeMlfmBJDV6djpmaM9Z5Hu1E5hNKdU/c5m9fL21KNyLy6hD"
       - name: Desplegar aplicación con AWS CodeDeploy
         run: aws deploy create-deployment \
-                 --region us-east-1 \  
+                 --aws-region us-east-1 \  
                  --application-name HolaMundo \
                  --application-group-name ImplementacionHolaMundo \
                  --revision revisionType=GitHub,gitHubLocation={repository=FCedillo98/CodeDeploy,commitId=4e6b74c01f37b5bc6b2ecde9228f4b959a38e256},fileExistsBehaviour=OVERWRITE
